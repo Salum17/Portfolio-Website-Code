@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salum Khatib - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="portfolioStyle.css">
     <script src="https://kit.fontawesome.com/579586fb2a.js" crossorigin="anonymous"></script>
 
@@ -14,7 +15,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <i class="fa-solid fa-code" style="color: #8EF1CA;"> <span style="color: #fff;"> SALUM KHATIB</span></i>
+                <a href ="#header"><i class="fa-solid fa-code" style="color: #8EF1CA;"> <span style="color: #fff;"> SALUM KHATIB</span></i></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -41,16 +42,12 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>
+                    <p class="para1">
                         I'm Salum Khatib, currently a sophomore pursuing a degree in software engineering at Ontario Tech University. 
-                        People often describe me as passionate, articulate, and resilient, highlighting my strong family orientation, 
-                        leadership skills, and business acumen. My interests span a wide spectrum, 
-                        from indulging in problem-solving and programming to immersing myself in gaming, chess, 
-                        and physical sports, with basketball holding a special place in my heart. 
-                        What truly drives me, though, is my unwavering passion for learning more about software development, 
-                        machine learning, cloud computing, and algorithms. 
-                        Looking ahead, my five-year vision is crystal clear: I aspire to establish myself in the software industry, 
-                        enriched by a myriad of diverse work experiences and continuous learning opportunities. 
+                        People often describe me as passionate, articulate, and resilient, highlighting my strong family orientation, leadership skills, and business acumen. 
+                        My interests span a wide spectrum, from indulging in problem-solving and programming to immersing myself in gaming, chess, and physical sports, with basketball holding a special place in my heart. 
+                        What truly drives me, though, is my unwavering passion for learning more about software development, machine learning, cloud computing, and algorithms. 
+                        Looking ahead, my five-year vision is crystal clear: I aspire to establish myself in the software industry, enriched by a myriad of diverse work experiences and continuous learning opportunities. 
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -58,29 +55,32 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul style="float: left;">Hard Skills:
+                        <ul style="float: left; font-size: 18px;">Technical Skills:
                             <li><span>Java, Python, C++</span></li>
                             <li><span>HTML, CSS, JavaScprit, Node.js</span></li>
                             <li><span>MicroSoft Office (Word, PowerPoint, Excel)</span></li>
                         </ul>
-                        <ul style="float: left; margin-left: 10%;">Soft Skills:
+                        <ul style="float: left; margin-left: 10%; font-size: 18px;">Soft Skills:
                             <li><span>Communication</span></li>
                             <li><span>Time Management</span></li>
-                            <li><span>Analytical abilities</span></li>
+                            <li><span>Analytical Abilities</span></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Experience name #1</span><br>Skill Description</li>
-                            <li><span>Experience name #2</span><br>Skill Description</li>
-                            <li><span>Experience name #3</span><br>Skill Description</li>
+                            <li><span>Weborax Design</span></li>
+                            <li>Junior Web Developer<br>August 2022-September 2023</li>
+                            <li><span>Toronto Transit Commission</span></li>
+                            <li>Station Maintenance (Student Team Lead)<br>June 2022- September 2022<br>May 2023- September 2023</li>
+                            <li><span>SVP Sports</span></li>>
+                            <li>Sales Associate<br>May 2021- September 2022</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>BEng. Software Engineering</span></li>
-                                <li>Sophomre Software Engineer at Ontario Tech University </li>
-                                <li>Notable Course:</li>
+                                <li class="positionTitle">Sophomre Software Engineer at Ontario Tech University </li>
+                                <li class="positionTitle">Notable Course:</li>
                                 <ul style="margin-left: 10px;">
                                     <li> -Object-Oriented Programming</li>
                                     <li> -Web Development</li>
@@ -105,7 +105,7 @@
                 <div>
                     <i class="fa-solid fa-code-compare fa-flip" style="color: #fff;"></i>
                     <h2>File Encyptor/Decryptor</h2>
-                    <p>File Encyptor/Decryptor is a program written in Python that combines logic and file manipulation
+                    <p class="para2">File Encyptor/Decryptor is a program written in Python that combines logic and file manipulation
                         to encrypt and decrypt user inputs and files using the principles of Ceasar Cipher. 
                         The program allows users to encrypt with a chosen key, and also allows for keyless decryption
                         that converts file data based on common word probability.
@@ -114,15 +114,19 @@
                 </div>
                 <div>
                     <i class="fa-solid fa-basketball fa-bounce" style="color: #fff;"></i>
-                    <h2>NBA Statistics Predictor <br>(Coming Soon)</h2>
-                    <p>Explain the code a little bit</p>
-                    <a href="#" class="botton botton1"> See Project</a>
+                    <h2>NBA Statistics Predictor</h2>
+                    <p>NBA Statistics Predictor is a Pthyon Machine learning model that scraps data from past NBA season to formulate acurate predictions
+                        for future games. The Machine Learning model will be trained to sort important statistical data for individual players, team match-ups,
+                        and even game importance according to season progression.
+                    </p>
+                    <a href="projects" class="botton botton1"> Coming Soon</a>
                 </div>
                 <div>
                     <i class="fa-regular fa-calendar-days fa-beat" style="color:#fff"></i>
-                    <h2>Time-Management Website <br>(Coming Soon)</h2>
-                    <p>Explain the code a little bit</p>
-                    <a href="#" class="botton botton1"> See Project</a>
+                    <h2>Time-Management Website</h2>
+                    <p>Time-Management Website is a user-friendly to-do list application with the ability to add, delete, and mark tasks as completed. 
+                        It also supports task prioritization, due dates, and local storage for task persistence, all while maintaining an appealing and visually pleasing design.</p>
+                    <a href="projects" class="botton botton1"> Coming soon</a>
                 </div>
 
             </div>

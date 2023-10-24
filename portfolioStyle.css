@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -99,18 +99,27 @@ nav ul li a:hover::after{
     
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
+}
+.para1{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
 }
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    font-size: 30px;
+    color: #fff;
+
+
 
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -146,10 +155,13 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+.positionTitle{
+    color: #fff;
+}
 /*--------projects------------*/
 
 #projects{
-    padding: 30px 0;
+    padding: 50px 0;
 
 }
 .project-list{
@@ -177,6 +189,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 15px;
 }
+.project-list div p{
+    font-size: 14px;
+
+}
 .project-list div a{
     text-decoration: none;
     color: white;
@@ -189,6 +205,9 @@ nav ul li a:hover::after{
     background: #8ef1ca;
     transform: translateY(-10px);
 }
+.project-list div:hover{
+    color: #262626;
+}
 .botton{
     display: block;
     margin: 50px auto;
@@ -199,6 +218,16 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: backgorund 0.5s;
 }
+.botton:hover{
+    color: #262626;
+    
+}
+.para2{
+    font-size: 12px;
+    text-align: justify;
+
+}
+/*------------Contact styling ---------------*/
 .contact-left{
     flex-basis: 35%;
 
