@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salum Khatib - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <script src="https://kit.fontawesome.com/579586fb2a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href ="#header"><i class="fa-solid fa-code" style="color: #8EF1CA;"> <span style="color: #fff;"> SALUM KHATIB</span></i></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hey There, <br> I'm <span>Salum Khatib</span></h1>
+                <p>Aspiring Software Engineer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--About Me Section Code-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/FullSizeRender.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para1">
+                        I'm <span class="paraColor1">Salum Khatib,</span> a sophomore pursuing my <span class="paraColor2">BEng. Software Engineering</span> at <span class="paraColor3">Ontario Tech University</span>. 
+                        People often describe me as <span class="paraColor1">passionate</span>, articulate, and <span class="paraColor2">resilient</span>, which compliment my <span class="paraColor1">leadership skills</span>, and <span class="paraColor3">business acumen</span> .
+                        My interests span a <span class="paraColor3">wide spectrum</span>, from indulging in <span class="paraColor2">problem-solving</span> and <span class="paraColor1">programming</span>, to immersing myself in gaming, and physical sports, with basketball holding a special place in my <span class="paraColor2">heart</span>. 
+                        What truly drives me, though, is my <span class="paraColor2">unwavering passion</span> for learning more about <span class="paraColor1">software development</span>, machine learning, <span class="paraColor3">cloud computing</span>, and algorithms. 
+                        Looking ahead, <span class="paraColor2">my five-year vision </span>is crystal clear: I aspire to <span class="paraColor1">establish</span> myself in the software industry, enriched by a myriad of diverse work experiences and my <span class="paraColor3">continuous search</span> for <span class="paraColor2">new learning opportunities</span>. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>Technical Skills:
+                            <li><span>Java, Python, C++</span></li>
+                            <li><span>HTML, CSS, JavaScprit, Node.js</span></li>
+                            <li><span>MicroSoft Office (Word, PowerPoint, Excel)</span></li>
+                        </ul>
+                        <ul>Soft Skills:
+                            <li><span>Communication</span></li>
+                            <li><span>Time Management</span></li>
+                            <li><span>Analytical Abilities</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Weborax Design</span></li>
+                            <li>Junior Web Developer<br>August 2022-September 2023</li>
+                            <li><span>Toronto Transit Commission</span></li>
+                            <li>Station Maintenance (Student Team Lead)<br>June 2022- September 2022<br>May 2023- September 2023</li>
+                            <li><span>SVP Sports</span></li>
+                            <li>Sales Associate<br>May 2021- September 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BEng. Software Engineering</span></li>
+                                <li class="positionTitle">Sophomre Software Engineer at Ontario Tech University </li>
+                                <li class="positionTitle">Notable Course:</li>
+                                <ul style="margin-left: 10px;">
+                                    <li> -Object-Oriented Programming</li>
+                                    <li> -Web Development</li>
+                                    <li> -Data Structures</li>
+                                    <li> -Discrete Math</li>
+                                    <li> -Statistics and Probability</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Projects--------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> <span style="color: #8EF1CA;">Personal</span> Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code-compare fa-flip" style="color: #fff;"></i>
+                    <h2>File Encyptor/Decryptor</h2>
+                    <p class="para2">File Encyptor/Decryptor is a program written in Python that combines logic and file manipulation
+                        to encrypt and decrypt user inputs and files using the principles of Ceasar Cipher. 
+                        The program allows users to encrypt with a chosen key, and also allows for keyless decryption
+                        that converts file data based on common word probability.
+                    </p>
+                    <a href="#" class="botton botton1"> See Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-basketball fa-bounce" style="color: #fff;"></i>
+                    <h2>NBA Statistics Predictor</h2>
+                    <p>NBA Statistics Predictor is a Pthyon Machine learning model that scraps data from past NBA season to formulate acurate predictions
+                        for future games. The Machine Learning model will be trained to sort important statistical data for individual players, team match-ups,
+                        and even game importance according to season progression.
+                    </p>
+                    <a href="projects" class="botton botton1"> Coming Soon</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-calendar-days fa-beat" style="color:#fff"></i>
+                    <h2>Time-Management Website</h2>
+                    <p>Time-Management Website is a user-friendly to-do list application with the ability to add, delete, and mark tasks as completed. 
+                        It also supports task prioritization, due dates, and local storage for task persistence, all while maintaining an appealing and visually pleasing design.</p>
+                    <a href="projects" class="botton botton1"> Coming soon</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> Salum.khatib@ontariotechu.net</p>
+                    <p><i class="fa-regular fa-paper-plane"></i> Salumkhatib500@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> 647-385-4158</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/salumkhatib/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Salum17"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/salum.k17/"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    <a href="images/Resume 2024.pdf" download class="botton botton2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="botton botton2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--JavaScripting-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        //Creating the opentab function that will display skill experience eduction when clicked
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRifHfq2CCeaVtog3CFdXlYV56zNU5QkeUjqpnI9jc6wPPN_6woqLdNOHGAmFi8VdQuA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+<footer>
+    <p class="cp-text">
+        © Copyright 2023 SALUM KHATIB. All rights reserved.
+    </p>
+</footer>
+
+</html>
